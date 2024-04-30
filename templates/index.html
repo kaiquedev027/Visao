@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Computacional</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="vs">
+        <img src="static/Visao-unscreen.gif" alt="">
+    </div>
+    <div class="title">
+        <h1>Sistema de Visao Computacional de Cadastro de Cliente</h1>
+    </div>
+    <fieldset class="fi">
+        <div class="container">
+            <form class="form" id="form">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <br>
+                <label for="senha">Senha:</label>
+                <input type="password" name="password" id="password">
+                <br>
+                <br>
+                <button class="sub" type="submit">Entrar</button>
+            </form>
+        </div>
+    </fieldset>
+    <!-- Bibliotecas do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDydjaTK29l6XH-cuQDOks-CPLoFVhEheM",
+            authDomain: "gerenciador-de-entregas-c1190.firebaseapp.com",
+            databaseURL: "https://gerenciador-de-entregas-c1190-default-rtdb.firebaseio.com",
+            projectId: "gerenciador-de-entregas-c1190",
+            storageBucket: "gerenciador-de-entregas-c1190.appspot.com",
+            messagingSenderId: "662477519271",
+            appId: "1:662477519271:web:9e4149edaaf565e82ade82",
+            measurementId: "G-PKMJVNSMF5"
+
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="static/login.js"></script>
+</body>
+
+</html>

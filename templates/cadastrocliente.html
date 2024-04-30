@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Computacional</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="/home">Home</a>
+        <a href="/cadastrocliente">Clientes</a>
+        <a href="/">Sair</a>
+    </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+    </div>
+    <fieldset class="container">
+        <div class="container">
+            <img class="visao" src="static/visao-computacional.png" alt="">
+            <h1>Sistema de Visao Computacional de Cadastro de Cliente</h1>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" name="image" id="imageInput">
+                <button class="env" type="button" onclick="uploadImage()">Enviar</button>
+            </form>
+        </div>
+    </fieldset>
+    <div class="ft">
+        <footer class="footer">
+            <p>© Copyright 2024 | Kaique Alves Fernandes</p>
+        </footer>
+    </div>
+    <script src="static/script2.js"></script>
+    <script src="static/menu.js"></script>
+
+</body>
+
+</html>
