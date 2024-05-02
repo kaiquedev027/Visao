@@ -9,7 +9,7 @@ app = Flask(__name__, static_folder='static')
 app = Flask(__name__)
 CORS(app)  # Ative o CORS para o aplicativo Flask
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET','POST'])
 def extract_information():
     return render_template('index.html')
     if request.method == 'POST':
