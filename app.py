@@ -11,7 +11,6 @@ CORS(app)  # Ative o CORS para o aplicativo Flask
 
 @app.route('/', methods=['GET','POST'])
 def extract_information():
-    return render_template('index.html')
     if request.method == 'POST':
         file = request.files['image']
         cliente = ""
@@ -61,6 +60,6 @@ def extract_information():
         # Retorna as informações extraídas em uma resposta JSON
         return jsonify({"cliente": cliente, "endereco": endereco, "fone": fone})
     else:
-        return 'Use o método POST para enviar a imagem.'
+        return render_template('index.html')
 if __name__ == '__main__':
     app.run(debug=True)
