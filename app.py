@@ -9,12 +9,9 @@ app = Flask(__name__, static_folder='static')
 app = Flask(__name__)
 CORS(app)  # Ative o CORS para o aplicativo Flask
 
-@app.route('/')
-def home():
-    return render_template('index.html')
-
 @app.route('/extract-info', methods=['POST'])
 def extract_information():
+    return render_template('index.html')
     if request.method == 'POST':
         file = request.files['image']
         cliente = ""
