@@ -10,16 +10,8 @@ app = Flask(__name__)
 CORS(app)  # Ative o CORS para o aplicativo Flask
 
 @app.route('/')
-def login():
-    return render_template('index.html')
-
-@app.route('/home')
 def home():
-    return render_template('home.html')
-
-@app.route('/cadastrocliente')
-def clientes():
-    return render_template('cadastrocliente.html')
+    return render_template('index.html')
 
 @app.route('/extract-info', methods=['POST'])
 def extract_information():
