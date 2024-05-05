@@ -80,6 +80,10 @@ h1{
   display: grid;
   justify-content: center;
 }
+.vis{
+    display: grid;
+    justify-content: center;
+}
 
 img {
   width: 170px;
